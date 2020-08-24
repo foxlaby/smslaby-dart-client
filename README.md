@@ -10,8 +10,18 @@ A simple usage example:
 ```dart
 import 'package:smslaby/smslaby.dart';
 
-main() {
-  var awesome = new Awesome();
+void main() {
+  var smslaby = SMSLaby();
+
+  smslaby.init('<hashـkey>')
+    .lang('<lang>')
+    .to('<numberPhone>')
+    .message('<message>')
+    // .sandbox(true)
+    .send((response){
+      print('Response status: ${response.statusCode}');
+      print('Response body: ${response.body}');
+    });
 }
 ```
 
@@ -19,4 +29,4 @@ main() {
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[tracker]: http://example.com/issues/replaceme
+[tracker]: https://github.com/FoxLaby/smslaby-dart-client/issues/replaceme
