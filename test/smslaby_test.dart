@@ -3,10 +3,10 @@ import 'package:test/test.dart';
 
 void main() {
   group('A group of tests', () {
-    Awesome awesome;
+    SMSLaby awesome;
 
     setUp(() {
-      awesome = Awesome();
+      awesome = SMSLaby();
     });
 
     test('First Test', () {
