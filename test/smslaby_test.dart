@@ -3,14 +3,14 @@ import 'package:test/test.dart';
 
 void main() {
   group('A group of tests', () {
-    SMSLaby awesome;
+    SMSLaby smslaby;
 
     setUp(() {
-      awesome = SMSLaby();
+      smslaby = SMSLaby();
     });
 
     test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+      expect(smslaby.isAwesome, isTrue);
     });
   });
 }
